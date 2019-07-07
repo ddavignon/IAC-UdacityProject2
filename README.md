@@ -5,11 +5,11 @@ Basic usage
 ---
 
 This project uses a cloudformation script to launch autoscaling EC2 instances.
-Running the script will create two stacks named IAC-Network and IAC-Server, starting with the network stack.
+Running the script will create two stacks named IAC-Network and IAC-Servers, starting with the network stack.
 
 To get started run: `./create-stack-IAC`
 
-To delete a stack run: `./delete STACK_NAME_HERE`
+To delete stacks first run: `./delete IAC-Servers`. Once complete you can delete the network stack with `./delete IAC-Network`.
 
 ---
 ### Project Requirements
