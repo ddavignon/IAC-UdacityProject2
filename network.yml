@@ -38,6 +38,7 @@ Resources:
     Type: AWS::EC2::VPC
     Properties:
       CidrBlock: !Ref VpcCIDR
+      EnableDnsSupport: true
       EnableDnsHostnames: true
       Tags:
         - Key: Name
@@ -124,8 +125,6 @@ Resources:
       AllocationId: !GetAtt NatGateway2EIP.AllocationId
       SubnetId: !Ref PublicSubnet2
 
-
-
   PublicRouteTable:
     Type: AWS::EC2::RouteTable
     Properties:
@@ -195,7 +194,7 @@ Resources:
     Properties:
       RouteTableId: !Ref PrivateRouteTable2
       SubnetId: !Ref PrivateSubnet2
-  
+
 Outputs:
   
   VPC: 

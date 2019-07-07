@@ -1,1 +1,2 @@
-UdacityProject2.pem
+*.pem
+.DS_Store

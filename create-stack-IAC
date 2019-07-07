@@ -1,0 +1,6 @@
+#!/bin/bash
+
+./create-or-update IAC-Network network.yml network-parameters.json
+./create-or-update IAC-Servers servers.yml servers-parameters.json
+
+

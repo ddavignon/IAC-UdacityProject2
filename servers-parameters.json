@@ -2,9 +2,5 @@
   {
     "ParameterKey": "EnvironmentName",
     "ParameterValue": "IACProject2"
-  },
-  {
-    "ParameterKey": "KeyPair",
-    "ParameterValue": "UdacityProject2"
   }
 ]
